@@ -21,6 +21,7 @@ public class LargestCoprimeDivisor {
 	public int cpFact(int A, int B) {
 		int x = A;
 		int gcd = gcd(A, B);
+		//find all factors of gcd and divide it with A
 		for (int i = 2; i <= gcd; i++) {
 			while (gcd % i == 0 && x % i == 0) {
 				x = x / i;
